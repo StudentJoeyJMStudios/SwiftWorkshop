@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L4G-cE-guS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ee6-IL-gHZ">
+            <objects>
+                <navigationController id="Lmi-YQ-jmm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JVT-xt-BEO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L4G-cE-guS" kind="show" id="8Zi-E9-11B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XM-ZO-tTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="380"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="eyj-ax-JPC">
+            <objects>
+                <viewController id="L4G-cE-guS" customClass="JMSMainViewController" customModule="SwiftWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AN0-fS-isA"/>
+                        <viewControllerLayoutGuide type="bottom" id="K07-4d-0Ce"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F00-7F-upp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zds-oh-A2D">
+                                <rect key="frame" x="132" y="126" width="47" height="30"/>
+                                <state key="normal" title="nested">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nestedTable:" destination="L4G-cE-guS" eventType="touchUpInside" id="KTo-7v-yae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLn-vt-JRZ">
+                                <rect key="frame" x="141" y="250" width="68" height="30"/>
+                                <state key="normal" title="Controller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToTableViewController:" destination="L4G-cE-guS" eventType="touchUpInside" id="LeV-VU-GTf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Kzc-Ot-1Tb" kind="show" identifier="nestedTable" id="WhA-Ds-S4i"/>
+                        <segue destination="grl-25-ihx" kind="show" identifier="tableController" id="hwt-pD-Vjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogo-V5-JIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="382"/>
+        </scene>
+        <!--Nested View Controller-->
+        <scene sceneID="vdK-1U-Pr7">
+            <objects>
+                <viewController id="Kzc-Ot-1Tb" customClass="JMSNestedViewController" customModule="SwiftWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="auF-fO-aaG"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyl-Ne-8ie"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hqu-0f-V7z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxM-r7-CFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="78"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="RFv-Kv-srj">
+            <objects>
+                <tableViewController id="grl-25-ihx" customClass="JMSTableViewController" customModule="SwiftWorkshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T75-XP-NMz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ncd-mQ-s8O">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncd-mQ-s8O" id="1PE-u1-yGR">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="grl-25-ihx" id="eBU-qA-hEk"/>
+                            <outlet property="delegate" destination="grl-25-ihx" id="Pt1-4u-9xD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR8-iY-hNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="862"/>
+        </scene>
+    </scenes>
+</document>

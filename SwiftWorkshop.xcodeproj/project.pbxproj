@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ED4E566419D8F72E005430CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E566319D8F72E005430CA /* AppDelegate.swift */; };
-		ED4E566619D8F72E005430CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E566519D8F72E005430CA /* ViewController.swift */; };
-		ED4E566919D8F72E005430CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E566719D8F72E005430CA /* Main.storyboard */; };
 		ED4E566B19D8F72E005430CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E566A19D8F72E005430CA /* Images.xcassets */; };
 		ED4E566E19D8F72E005430CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4E566C19D8F72E005430CA /* LaunchScreen.xib */; };
 		ED4E567A19D8F72E005430CA /* SwiftWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E567919D8F72E005430CA /* SwiftWorkshopTests.swift */; };
+		ED4E568419D8F782005430CA /* WorkshopStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E568319D8F782005430CA /* WorkshopStoryBoard.storyboard */; };
+		ED4E568619D8F86A005430CA /* JMSDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568519D8F86A005430CA /* JMSDataModel.swift */; };
+		ED4E568819D8F881005430CA /* JMSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568719D8F881005430CA /* JMSTableViewController.swift */; };
+		ED4E568A19D8F895005430CA /* JMSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568919D8F895005430CA /* JMSMainViewController.swift */; };
+		ED4E568C19D8F8A5005430CA /* JMSNestedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		ED4E565E19D8F72E005430CA /* SwiftWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4E566219D8F72E005430CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4E566319D8F72E005430CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4E566519D8F72E005430CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ED4E566819D8F72E005430CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4E566A19D8F72E005430CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED4E566D19D8F72E005430CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED4E567319D8F72E005430CA /* SwiftWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4E567819D8F72E005430CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4E567919D8F72E005430CA /* SwiftWorkshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWorkshopTests.swift; sourceTree = "<group>"; };
+		ED4E568319D8F782005430CA /* WorkshopStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WorkshopStoryBoard.storyboard; path = ../WorkshopStoryBoard.storyboard; sourceTree = "<group>"; };
+		ED4E568519D8F86A005430CA /* JMSDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDataModel.swift; sourceTree = "<group>"; };
+		ED4E568719D8F881005430CA /* JMSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSTableViewController.swift; sourceTree = "<group>"; };
+		ED4E568919D8F895005430CA /* JMSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSMainViewController.swift; sourceTree = "<group>"; };
+		ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSNestedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				ED4E566319D8F72E005430CA /* AppDelegate.swift */,
-				ED4E566519D8F72E005430CA /* ViewController.swift */,
-				ED4E566719D8F72E005430CA /* Main.storyboard */,
+				ED4E568519D8F86A005430CA /* JMSDataModel.swift */,
+				ED4E568319D8F782005430CA /* WorkshopStoryBoard.storyboard */,
+				ED4E568919D8F895005430CA /* JMSMainViewController.swift */,
+				ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */,
+				ED4E568719D8F881005430CA /* JMSTableViewController.swift */,
 				ED4E566A19D8F72E005430CA /* Images.xcassets */,
 				ED4E566C19D8F72E005430CA /* LaunchScreen.xib */,
 				ED4E566119D8F72E005430CA /* Supporting Files */,
@@ -192,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4E566919D8F72E005430CA /* Main.storyboard in Resources */,
+				ED4E568419D8F782005430CA /* WorkshopStoryBoard.storyboard in Resources */,
 				ED4E566E19D8F72E005430CA /* LaunchScreen.xib in Resources */,
 				ED4E566B19D8F72E005430CA /* Images.xcassets in Resources */,
 			);
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4E566619D8F72E005430CA /* ViewController.swift in Sources */,
+				ED4E568A19D8F895005430CA /* JMSMainViewController.swift in Sources */,
+				ED4E568C19D8F8A5005430CA /* JMSNestedViewController.swift in Sources */,
+				ED4E568819D8F881005430CA /* JMSTableViewController.swift in Sources */,
+				ED4E568619D8F86A005430CA /* JMSDataModel.swift in Sources */,
 				ED4E566419D8F72E005430CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ED4E566719D8F72E005430CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED4E566819D8F72E005430CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ED4E566C19D8F72E005430CA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
