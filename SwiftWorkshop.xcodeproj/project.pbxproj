@@ -16,6 +16,9 @@
 		ED4E568819D8F881005430CA /* JMSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568719D8F881005430CA /* JMSTableViewController.swift */; };
 		ED4E568A19D8F895005430CA /* JMSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568919D8F895005430CA /* JMSMainViewController.swift */; };
 		ED4E568C19D8F8A5005430CA /* JMSNestedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */; };
+		ED4ED44F19E45B7600B36FCE /* JMSDisplayItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4ED44E19E45B7600B36FCE /* JMSDisplayItemViewController.swift */; };
+		ED9A456519E5B08700802725 /* JMSSelectedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A456419E5B08700802725 /* JMSSelectedTableViewController.swift */; };
+		EDFB3EBB19E2FF7C00D7EF49 /* JMSWorkshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB3EBA19E2FF7C00D7EF49 /* JMSWorkshopCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		ED4E568719D8F881005430CA /* JMSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSTableViewController.swift; sourceTree = "<group>"; };
 		ED4E568919D8F895005430CA /* JMSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSMainViewController.swift; sourceTree = "<group>"; };
 		ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSNestedViewController.swift; sourceTree = "<group>"; };
+		ED4ED44E19E45B7600B36FCE /* JMSDisplayItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSDisplayItemViewController.swift; sourceTree = "<group>"; };
+		ED9A456419E5B08700802725 /* JMSSelectedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSSelectedTableViewController.swift; sourceTree = "<group>"; };
+		EDFB3EBA19E2FF7C00D7EF49 /* JMSWorkshopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMSWorkshopCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,10 @@
 				ED4E568319D8F782005430CA /* WorkshopStoryBoard.storyboard */,
 				ED4E568919D8F895005430CA /* JMSMainViewController.swift */,
 				ED4E568B19D8F8A5005430CA /* JMSNestedViewController.swift */,
+				EDFB3EBA19E2FF7C00D7EF49 /* JMSWorkshopCell.swift */,
 				ED4E568719D8F881005430CA /* JMSTableViewController.swift */,
+				ED4ED44E19E45B7600B36FCE /* JMSDisplayItemViewController.swift */,
+				ED9A456419E5B08700802725 /* JMSSelectedTableViewController.swift */,
 				ED4E566A19D8F72E005430CA /* Images.xcassets */,
 				ED4E566C19D8F72E005430CA /* LaunchScreen.xib */,
 				ED4E566119D8F72E005430CA /* Supporting Files */,
@@ -222,8 +231,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4E568A19D8F895005430CA /* JMSMainViewController.swift in Sources */,
+				ED9A456519E5B08700802725 /* JMSSelectedTableViewController.swift in Sources */,
 				ED4E568C19D8F8A5005430CA /* JMSNestedViewController.swift in Sources */,
+				ED4ED44F19E45B7600B36FCE /* JMSDisplayItemViewController.swift in Sources */,
 				ED4E568819D8F881005430CA /* JMSTableViewController.swift in Sources */,
+				EDFB3EBB19E2FF7C00D7EF49 /* JMSWorkshopCell.swift in Sources */,
 				ED4E568619D8F86A005430CA /* JMSDataModel.swift in Sources */,
 				ED4E566419D8F72E005430CA /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +421,7 @@
 				ED4E567F19D8F72E005430CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4E568019D8F72E005430CA /* Build configuration list for PBXNativeTarget "SwiftWorkshopTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				ED4E568219D8F72E005430CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

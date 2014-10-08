@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FD8BC9F2-E682-4C40-90C7-305426B8DADD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftWorkshop</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F55BBA69A7A40DB11E7BD47F1AF02EA6B379ABA2</key>
+		<string>https://github.com/StudentJoeyJMStudios/SwiftWorkshop.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftWorkshop.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F55BBA69A7A40DB11E7BD47F1AF02EA6B379ABA2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/StudentJoeyJMStudios/SwiftWorkshop.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F55BBA69A7A40DB11E7BD47F1AF02EA6B379ABA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F55BBA69A7A40DB11E7BD47F1AF02EA6B379ABA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftWorkshop</string>
+		</dict>
+	</array>
+</dict>
+</plist>

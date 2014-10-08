@@ -1,16 +1,16 @@
 //
-//  JMSTableViewController.swift
+//  JMSSelectedTableViewController.swift
 //  SwiftWorkshop
 //
-//  Created by Joseph Richardson on 9/28/14.
+//  Created by Joseph Richardson on 10/8/14.
 //  Copyright (c) 2014 JMStudios. All rights reserved.
 //
 
 import UIKit
 
-class JMSTableViewController: UITableViewController
+class JMSSelectedTableViewController: UITableViewController
 {
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -32,52 +32,25 @@ class JMSTableViewController: UITableViewController
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return workshopArray.count
+        return selectedData.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("planets", forIndexPath: indexPath) as UITableViewCell
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("selected", forIndexPath: indexPath) as UITableViewCell
 
+        cell.textLabel?.text = selectedData[indexPath.row]
         // Configure the cell...
-        cell.textLabel?.text = workshopArray[indexPath.row] as String
 
         return cell
     }
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        selectedItem = workshopArray[indexPath.row]
-        
-        var data : String = "Controller \(selectedItem)"
-        
-        selectedData.append(data)
-        
-        performSegueWithIdentifier("viewItem", sender: self)
-        
-        
-        
-        
-        
-    }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
-    {
-        var ds = segue.destinationViewController as JMSDisplayItemViewController
-        
-        ds.passedSelectedItem = selectedItem
-        
-    }
-    /*
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

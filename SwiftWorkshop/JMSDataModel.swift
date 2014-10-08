@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+var workshopArray : [String] = ["Sun", "Mercury", "Venus", "Uranus", "Earth", "Saturn", "Mars", "Jupiter"]
+
+var selectedItem : String = ""
+
+var selectedData : [String] = []
