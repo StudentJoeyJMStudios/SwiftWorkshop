@@ -12,6 +12,7 @@ class JMSDisplayItemViewController: UIViewController
 {
     var passedSelectedItem : String = ""
     
+    @IBOutlet weak var imageOfPlanet: UIImageView!
     @IBOutlet weak var nameItem: UILabel!
     
     
@@ -20,6 +21,8 @@ class JMSDisplayItemViewController: UIViewController
         super.viewDidLoad()
         
         nameItem.text = selectedItem
+        
+        imageOfPlanet.image = UIImage(named: selectedItemSRC)
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +32,10 @@ class JMSDisplayItemViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func viewSelectedItems(sender: AnyObject)
+    {
+        performSegueWithIdentifier("viewSelected", sender: self)
+    }
 
     /*
     // MARK: - Navigation

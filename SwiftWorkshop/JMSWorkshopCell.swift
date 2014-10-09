@@ -12,6 +12,7 @@ class JMSWorkshopCell: UITableViewCell
 {
     @IBOutlet weak var planetName: UILabel!
 
+    @IBOutlet weak var planetImage: UIImageView!
     override func awakeFromNib()
     {
         super.awakeFromNib()

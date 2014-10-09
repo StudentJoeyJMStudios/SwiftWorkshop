@@ -117,9 +117,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi3-f2-YXg">
+                                                    <rect key="frame" x="161" y="0.0" width="82" height="44"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="planetImage" destination="Vi3-f2-YXg" id="jaZ-di-ZGS"/>
                                             <outlet property="planetName" destination="0BW-qo-dde" id="KQe-Ej-jx8"/>
                                         </connections>
                                     </tableViewCell>
@@ -168,16 +172,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6F-6M-lhj">
+                                <rect key="frame" x="32" y="161" width="97" height="30"/>
+                                <state key="normal" title="View Selected">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewSelectedItems:" destination="uSi-bN-vrx" eventType="touchUpInside" id="NSm-dJ-nxL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuN-L6-ROh">
+                                <rect key="frame" x="32" y="226" width="293" height="247"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="imageOfPlanet" destination="PuN-L6-ROh" id="tHo-QJ-CvQ"/>
                         <outlet property="nameItem" destination="eXW-ha-EKd" id="ZYX-cf-OmH"/>
+                        <segue destination="ubV-Rq-kI5" kind="show" identifier="viewSelected" id="0e0-GX-y4S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-Ev-WAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549" y="380"/>
+            <point key="canvasLocation" x="2557" y="368"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="RFv-Kv-srj">
@@ -211,5 +229,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LhQ-fP-PXr"/>
+        <segue reference="0e0-GX-y4S"/>
     </inferredMetricsTieBreakers>
 </document>

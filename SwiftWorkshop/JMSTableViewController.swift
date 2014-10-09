@@ -58,6 +58,8 @@ class JMSTableViewController: UITableViewController
     {
         selectedItem = workshopArray[indexPath.row]
         
+        selectedItemSRC = workshopSRCArray[indexPath.row]
+        
         var data : String = "Controller \(selectedItem)"
         
         selectedData.append(data)

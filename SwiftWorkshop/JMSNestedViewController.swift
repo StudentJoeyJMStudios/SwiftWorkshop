@@ -37,13 +37,15 @@ class JMSNestedViewController: UIViewController, UITableViewDelegate
         var cell : JMSWorkshopCell! = tableView.dequeueReusableCellWithIdentifier("planets")! as JMSWorkshopCell
         
         cell.planetName.text = workshopArray[indexPath.row]
-        
+        cell.planetImage.image = UIImage(named: workshopSRCArray[indexPath.row])
         
         return cell;
     }
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!)
     {
         selectedItem = workshopArray[indexPath.row]
+        
+        selectedItemSRC = workshopSRCArray[indexPath.row]
         
         var data : String = "Nested \(selectedItem)"
         

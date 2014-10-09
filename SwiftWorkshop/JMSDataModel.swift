@@ -14,4 +14,6 @@ var workshopSRCArray : [String] = ["earth.jpg", "jupiter.jpg", "mars.jpg", "merc
 
 var selectedItem : String = ""
 
+var selectedItemSRC : String = ""
+
 var selectedData : [String] = []
