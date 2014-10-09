@@ -8,7 +8,9 @@
 
 import Foundation
 
-var workshopArray : [String] = ["Sun", "Mercury", "Venus", "Uranus", "Earth", "Saturn", "Mars", "Jupiter"]
+var workshopArray : [String ] = ["Earth", "Jupiter", "Mars",  "Mercury", "Moon",  "Pluto", "Saturn", "Sun", "Uranus","Venus"  ]
+
+var workshopSRCArray : [String] = ["earth.jpg", "jupiter.jpg", "mars.jpg", "mercury.jpg", "moon.jpg", "pluto.jpg", "saturn.jpg", "sun.jpg", "uranus.jpg", "venus.jpg"]
 
 var selectedItem : String = ""
 
